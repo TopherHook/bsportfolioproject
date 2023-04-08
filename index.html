@@ -7,11 +7,92 @@
 
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Capn T's! Monterey Bay's Pirate Diner</title>
 </head>
+
 <body>
-    
+    <div>
+        <nav id="ctNav" class="navbar navbar-expand-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand">Capn T's</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Monterey Bay
+                        </a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Seafood Watch</a>
+                        <a class="dropdown-item" href="#">Award Winning Clam Chowder</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Reviews</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <img src="img/wharf_entrance.jpeg" alt="photo of fisherman's wharf entrance" class="img-fluid">
+        </div>
+
+        <div class="container">
+            <h3 id="menu">Menu</h3>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#apps" role="tab" data-toggle="tab">Appetizers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lunch" role="tab" data-toggle="tab">Lunch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dinner" role="tab" data-toggle="tab">Dinner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#drinks" role="tab" data-toggle="tab">Drinks</a>
+                </li>
+            </ul>
+        
+
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade show active" id="apps">
+                    <div class="card">
+                        <img src="img/avocado_toast.jpeg" class="card-img-top" alt="an image of avocado toast">
+                        <div class="card-body">
+                        <h5 class="card-title">Avocado Toast</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+                        <p class="card-text">Fresh California Avocados with cracked black pepper and seasalt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="lunch">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/carnitas_tacos.jpeg" class="card-img-top" alt="an image of carnitas tacos">
+                        <div class="card-body">
+                        <h5 class="card-title">Carnitas Tacos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">$15</h6>
+                        <p class="card-text">Succulent carnitas with pico de gallo, shredded cheese, and fresh california avocados. Times 3!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
